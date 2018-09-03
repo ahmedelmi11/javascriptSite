@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ahmed Elmi Site</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" >
+  </head>
+  <body style="padding: 20px">
+
+ <h1 class="title">Ahmed Elmi</h1>
+  <img src="images/Ahmed2.png" alt="Ahmed" width="200px" height="200px" />
+    <img  id="image1" src="images/Ahmed3.png" alt="My test image">
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <!-- <img src="Ahmed2.png" style="width:100%"> -->
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <!-- <img src="Ahmed4.jpg" style="width:100%"> -->
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+ <!--    <img src="Ahmed3.png" style="width:100%"> -->
+    <div class="text">Caption Three</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="tabContainer">
+  <div class="tabPanel">
+    <p>This is: </p><p id="tabPanelName"></p>
+
+  </div>
+  <div class="buttonContainer">
+    <button class="tablinks" onclick="showPanel(0,'#2196f3')">About Me</button>
+    <button class="tablinks" onclick="showPanel(1,'#4caf50')">Education</button>
+    <button class="tablinks" onclick="showPanel(2,'#a3a7e4')">Work Experience</button>
+    <button class="tablinks" onclick="showPanel(3,'#ff5722')">Hobbies</button>
+  </div>
+</div>
+
+<button>Change user</button>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
